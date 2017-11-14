@@ -26,7 +26,9 @@ module.exports = {
         path.resolve(__dirname, 'app/components'),
         path.resolve(__dirname, 'app/api'),
         
-        path.resolve(__dirname, 'app/actions')      
+        // he did it with alias
+        path.resolve(__dirname, 'app/actions'),
+        path.resolve(__dirname, 'app/reducers')
     ],
     alias: {
       applicationStyles: path.resolve(__dirname, 'app/styles/app.scss')
