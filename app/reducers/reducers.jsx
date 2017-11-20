@@ -6,8 +6,8 @@ export var searchTextReducer = (state = '', action) => {
         case 'SET_SEARCH_TEXT':
             return action.searchText;
         default:
-            state;
-    }
+            return state;
+    };
 };
 
 export var showCompletedReducer = (state = false, action) => {
@@ -15,8 +15,8 @@ export var showCompletedReducer = (state = false, action) => {
         case 'TOGGLE_SHOW_COMPLETED':
             return !state;
         default:
-            state;
-    }
+            return state;
+    };
 };
 
 export var todosReducer = (state = [], action) => {
@@ -45,6 +45,6 @@ export var todosReducer = (state = [], action) => {
                 }
             });
         default:
-            state;
-    }
+            return state;
+    };
 };

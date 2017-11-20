@@ -28,7 +28,8 @@ module.exports = {
         
         // he did it with alias
         path.resolve(__dirname, 'app/actions'),
-        path.resolve(__dirname, 'app/reducers')
+        path.resolve(__dirname, 'app/reducers'),
+        path.resolve(__dirname, 'app/store')
     ],
     alias: {
       applicationStyles: path.resolve(__dirname, 'app/styles/app.scss')
@@ -40,7 +41,7 @@ module.exports = {
       {
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-0']
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
