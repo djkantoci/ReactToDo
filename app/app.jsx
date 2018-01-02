@@ -12,10 +12,10 @@ store.subscribe(() => {
     console.log('New state', store.getState());
 });
 
-store.dispatch(actions.addTodo('Clean the house'));
-//store.dispatch(actions.addTodo('Wash car'));
-store.dispatch(actions.setSearchText('the'));
-store.dispatch(actions.toggleShowCompleted());
+// defaults example:
+// store.dispatch(actions.addTodo('Clean the house'));
+// store.dispatch(actions.setSearchText('the'));
+// store.dispatch(actions.toggleShowCompleted());
 
 // Load foundation
 require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
